@@ -8,6 +8,11 @@ function one() {
     calcule = calcule  + 1;
     console.log("calcul", calcule);
     console.log("adition", nombre);
+    var affichage = document.getElementById('affichage');
+    affichage.innerHTML = nombre ;
+    var affichageaddition = document.getElementById('print_number');
+    affichageaddition.innerHTML = "1";
+
 }
 function two() {
     // var elem = document.getElementById('two'); afficher la ligne html
@@ -16,6 +21,10 @@ function two() {
     calcule = calcule  + 2;
     console.log("adition", nombre);
     console.log("resultat", calcule);
+    var affichage = document.getElementById('affichage');
+    affichage.innerHTML = nombre ;
+    var affichageaddition = document.getElementById('print_number');
+    affichageaddition.innerHTML = "2";
 }
 function three() {
     // var elem = document.getElementById('two'); afficher la ligne html
@@ -24,6 +33,10 @@ function three() {
     calcule = calcule  + 3;
     console.log("adition", nombre);
     console.log("resultat", calcule);
+    var affichage = document.getElementById('affichage');
+    affichage.innerHTML = nombre ;
+    var affichageaddition = document.getElementById('print_number');
+    affichageaddition.innerHTML = "3";
 }
 function four() {
     // var elem = document.getElementById('two'); afficher la ligne html
@@ -32,6 +45,10 @@ function four() {
     calcule = calcule  + 4;
     console.log("adition", nombre);
     console.log("resultat", calcule);
+    var affichage = document.getElementById('affichage');
+    affichage.innerHTML = nombre ;
+    var affichageaddition = document.getElementById('print_number');
+    affichageaddition.innerHTML = "4";
 }
 function five() {
     // var elem = document.getElementById('two'); afficher la ligne html
@@ -40,6 +57,10 @@ function five() {
     calcule = calcule  + 5;
     console.log("adition", nombre);
     console.log("resultat", calcule);
+    var affichage = document.getElementById('affichage');
+    affichage.innerHTML = nombre ;
+    var affichageaddition = document.getElementById('print_number');
+    affichageaddition.innerHTML = "5";
 }
 function six() {
     // var elem = document.getElementById('two'); afficher la ligne html
@@ -48,6 +69,10 @@ function six() {
     calcule = calcule  + 6;
     console.log("adition", nombre);
     console.log("resultat", calcule);
+    var affichage = document.getElementById('affichage');
+    affichage.innerHTML = nombre ;
+    var affichageaddition = document.getElementById('print_number');
+    affichageaddition.innerHTML = "6";
 }
 function seven() {
     // var elem = document.getElementById('two'); afficher la ligne html
@@ -56,6 +81,10 @@ function seven() {
     calcule = calcule  + 7;
     console.log("adition", nombre);
     console.log("resultat", calcule);
+    var affichage = document.getElementById('affichage');
+    affichage.innerHTML = nombre ;
+    var affichageaddition = document.getElementById('print_number');
+    affichageaddition.innerHTML = "7";
 }
 function eight() {
     // var elem = document.getElementById('two'); afficher la ligne html
@@ -64,6 +93,10 @@ function eight() {
     calcule = calcule  + 8;
     console.log("adition", nombre);
     console.log("resultat", calcule);
+    var affichage = document.getElementById('affichage');
+    affichage.innerHTML = nombre ;
+    var affichageaddition = document.getElementById('print_number');
+    affichageaddition.innerHTML = "8";
 }
 function nine() {
     // var elem = document.getElementById('two'); afficher la ligne html
@@ -72,17 +105,41 @@ function nine() {
     calcule = calcule  + 9;
     console.log("adition", nombre);
     console.log("resultat", calcule);
+    var affichage = document.getElementById('affichage');
+    affichage.innerHTML = nombre ;
+    var affichageaddition = document.getElementById('print_number');
+    affichageaddition.innerHTML = "9";
 }
 function zero() {
     // var elem = document.getElementById('two'); afficher la ligne html
     console.log("Vous avez entré 9");
-    nombre =  nombre + " * 10 ";
+    nombre =  nombre + " *10 ";
     calcule = calcule  * 10;
     console.log("adition", nombre);
     console.log("resultat", calcule);
+    var affichage = document.getElementById('affichage');
+    affichage.innerHTML = nombre ;
+    var affichageaddition = document.getElementById('print_number');
+    affichageaddition.innerHTML = "*10";
+    document.getElementById('zero').disabled = true;
 }
 function equal(){
     var affichage = document.getElementById('affichage');
+    console.log("adition", nombre);
+    console.log("resultat", calcule);
     affichage.innerHTML = nombre + " = " + calcule;
+    var affichageaddition = document.getElementById('print_number');
+    affichageaddition.innerHTML = calcule;
+}
 
+function reset(){
+    var affichage = document.getElementById('affichage');
+    affichage.innerHTML = "Calcule";
+    var affichageaddition = document.getElementById('print_number');
+    affichageaddition.innerHTML = "Addition";
+    nombre =  0;
+    calcule = 0;
+    console.log("nombre", nombre);
+    console.log("calcule", calcule);
+    document.getElementById('zero').disabled = false;
 }

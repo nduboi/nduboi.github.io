@@ -6,22 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="build/js/main.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="build/css/main.css">
+    <link rel="shortcut icon" href="build/img/favicon.ico" type="image/x-icon">
     <title>Caluclatrice</title>
 </head>
-<body>
-    <h1>Additions</h1>
-    <p id="affichage"></p>
-    <button id="one" onclick="one()">1</button>
-    <button id="two" onclick="two()">2</button>
-    <button id="three" onclick="three()">3</button>
-    <button id="four" onclick="four()">4</button>
-    <button id="five" onclick="five()">5</button>
-    <button id=six" onclick="six()">6</button>
-    <button id="seven" onclick="seven()">7</button>
-    <button id="eight" onclick="eight()">8</button>
-    <button id="nine" onclick="nine()">9</button>
-    <button id="zero" onclick="zero()">0</button>
-    <button id="equal" onclick="equal()">=</button>
+<body class="bg-gray-100">
+    <main class="flex justify-center">
+        <section class="container lg:p-8  md:p-5 grid lg:grid-rows-4 lg:grid-cols-4 md:grid-cols-3 md:grid-rows-6 sm:grid-rows-8 sm:grid-cols-3">
+            <div id="print_number" class="m-5 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 lg:row-start-1 lg:col-start-1 md:row-start-1 md:col-start-1 ">Additions</div> 
+            <div class="m-5 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-2 sm:col-span-2 lg:row-start-4" lg:row-start-4 lg:col-start-1 md:row-start-1 md:col-start-3>
+                <p id="affichage">Calcule</p>
+            </div>
+            <button id="one" class="sm:row-start-2 sm:col-start-1 lg:row-start-1 lg:col-start-2 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center md:row-start-2 md:col-start-1" onclick="one()">
+                <div class="">1</div>
+            </button>
+            <button id="two" class="sm:row-start-2 sm:col-start-2 lg:row-start-1 lg:col-start-3 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center md:row-start-2 md:col-start-2 " onclick="two()">
+                <div class="">2</div>
+            </button>
+            <button id="three" class="sm:row-start-2 sm:col-start-3 lg:row-start-1 lg:col-start-4 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center md:row-start-2 md:col-start-3 " onclick="three()">
+                <div class="">3</div>
+            </button>
+            <div class="sm:row-start-6 sm:col-start-1 sm:invisible md:visible lg:row-start-2 lg:col-start-1 m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-3 sm:col-span-1 text-center md:row-start-6 md:col-start-1 ">
+                <h5 class="nduboi">By nduboi</h5>
+            </div>
+            <button id="four" onclick="four()" class="sm:row-start-3 sm:col-start-1 lg:row-start-2 lg:col-start-2 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center md:row-start-3 md:col-start-1">
+                <div class="">4</div>
+            </button>
+            <button id="five" class="sm:row-start-3 sm:col-start-2 lg:row-start-2 lg:col-start-3 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center md:row-start-3 md:col-start-2" onclick="five()">
+                <div class="">5</div></button>
+            <button id="six" onclick="six()" class="sm:row-start-3 sm:col-start-3 lg:row-start-2 lg:col-start-4 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center md:row-start-3 md:col-start-3 ">
+                <div class="">6</div>
+            </button>
+            <button id="resetlg" onclick="reset()" class="sm:row-start-6 sm:col-start-1 md:row-start-6 md:col-start-1 md:invisible sm:invisible lg:visible  lg:row-start-3 lg:col-start-1 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 ">
+                <div class="">Reset</div>
+            </button>
+            <button id="seven" onclick="seven()" class="sm:row-start-4 sm:col-start-1 lg:row-start-3 lg:col-start-2 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center md:row-start-4 md:col-start-1">
+                <div class="m-6">7</div>
+            </button>
+            <button id="eight" onclick="eight()" class="sm:row-start-4 sm:col-start-2 lg:row-start-3 lg:col-start-3 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center md:row-start-4 md:col-start-2 ">
+                <div class="">8</div>
+            </button>
+            <button id="nine" class="sm:row-start-4 sm:col-start-3 lg:row-start-3 lg:col-start-4 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center md:row-start-4 md:col-start-3 " onclick="nine()">
+                <div class="">9</div>
+            </button>
+            <button id="equallg" onclick="equal()" class="sm:row-start-6 sm:col-start-1 sm:invisible md:row-start-6 md:col-start-1 md:invisible lg:visible lg:row-start-4 lg:col-start-2 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center lg:col-start-2 lg:row-start-4">
+                <div class="">=</div>
+            </button>
+            <button id="resetmd" onclick="reset()" class="sm:row-start-5 sm:col-start-1  md:row-start-5 md:col-start-1 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center hover:shadow-xl lg:invisible lg:row-start-4 lg:col-start-4 lg:invisible lg:row-start-4 lg:col-start-4 md:row-start-5 md:col-start-1">
+                <div class="">Reset</div>
+            </button>
+            <button id="zero" onclick="zero()" class="sm:row-start-5 sm:col-start-2 lg:row-start-4 lg:col-start-3 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center lg:row-start-4 md:row-start-5 md:col-start-2">
+                <div class="">x10</div>
+            </button>
+            <button id="equalmd" onclick="equal()" class="sm:row-start-5 sm:col-start-3 md:row-start-5 md:col-start-3  m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center hover:shadow-xl lg:invisible lg:row-start-4 lg:col-start-4 md:row-start-5 md:col-start-3">
+                <div class="">=</div>
+            </button>
+        </section>
+    </main>
 </body>
 </html>
