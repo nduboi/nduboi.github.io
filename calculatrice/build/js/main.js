@@ -10,6 +10,8 @@ var divi = 0;
 function one() {
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "Additions";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "Additions";
     // var elem = document.getElementById('one'); afficher la ligne html
     console.log("Vous avez entré 1");
     nombre =   number+"1";
@@ -19,10 +21,15 @@ function one() {
     console.log("adition", number);
     var affichage = document.getElementById('print_number');
     affichage.innerHTML = number ;
+    var affichage = document.getElementById('print_numbersl');
+    affichage.innerHTML = number ;
+    
 }
 function two() {
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "Additions";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "Additions";
     // var elem = document.getElementById('two'); afficher la ligne html
     console.log("Vous avez entré 2");
     nombre =   number+"2";
@@ -32,10 +39,14 @@ function two() {
     console.log("adition", number);
     var affichage = document.getElementById('print_number');
     affichage.innerHTML = number ;
+    var affichage = document.getElementById('print_numbersl');
+    affichage.innerHTML = number ;
 }
 function three() {
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "Additions";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "Additions";
     // var elem = document.getElementById('two'); afficher la ligne html
     console.log("Vous avez entré 3");
     nombre =   number+"3";
@@ -45,10 +56,14 @@ function three() {
     console.log("adition", number);
     var affichage = document.getElementById('print_number');
     affichage.innerHTML = number ;
+    var affichage = document.getElementById('print_numbersl');
+    affichage.innerHTML = number ;
 }
 function four() {
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "Additions";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "Additions";
     // var elem = document.getElementById('two'); afficher la ligne html
     console.log("Vous avez entré 4");
     nombre =   number+"4";
@@ -58,10 +73,14 @@ function four() {
     console.log("adition", number);
     var affichage = document.getElementById('print_number');
     affichage.innerHTML = number ;
+    var affichage = document.getElementById('print_numbersl');
+    affichage.innerHTML = number ;
 }
 function five() {
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "Additions";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "Additions";
     // var elem = document.getElementById('two'); afficher la ligne html
     console.log("Vous avez entré 5");
     nombre =   number+"5";
@@ -71,10 +90,14 @@ function five() {
     console.log("adition", number);
     var affichage = document.getElementById('print_number');
     affichage.innerHTML = number ;
+    var affichage = document.getElementById('print_numbersl');
+    affichage.innerHTML = number ;
 }
 function six() {
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "Additions";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "Additions";
     // var elem = document.getElementById('two'); afficher la ligne html
     console.log("Vous avez entré 6");
     nombre =   number+"6";
@@ -84,10 +107,14 @@ function six() {
     console.log("adition", number);
     var affichage = document.getElementById('print_number');
     affichage.innerHTML = number ;
+    var affichage = document.getElementById('print_numbersl');
+    affichage.innerHTML = number ;
 }
 function seven() {
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "Additions";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "Additions";
     // var elem = document.getElementById('two'); afficher la ligne html
     console.log("Vous avez entré 7");
     nombre =   number+"7";
@@ -97,10 +124,14 @@ function seven() {
     console.log("adition", number);
     var affichage = document.getElementById('print_number');
     affichage.innerHTML = number ;
+    var affichage = document.getElementById('print_numbersl');
+    affichage.innerHTML = number ;
 }
 function eight() {
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "Additions";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "Additions";
     // var elem = document.getElementById('two'); afficher la ligne html
     console.log("Vous avez entré 8");
     nombre =   number+"8";
@@ -110,10 +141,14 @@ function eight() {
     console.log("adition", number);
     var affichage = document.getElementById('print_number');
     affichage.innerHTML = number ;
+    var affichage = document.getElementById('print_numbersl');
+    affichage.innerHTML = number ;
 }
 function nine() {
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "Additions";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "Additions";
     // var elem = document.getElementById('two'); afficher la ligne html
     console.log("Vous avez entré 9");
     nombre =   number+"9";
@@ -123,10 +158,14 @@ function nine() {
     console.log("adition", number);
     var affichage = document.getElementById('print_number');
     affichage.innerHTML = number ;
+    var affichage = document.getElementById('print_numbersl');
+    affichage.innerHTML = number ;
 }
 function zero() {
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "Additions";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "Additions";
     // var elem = document.getElementById('two'); afficher la ligne html
     console.log("Vous avez entré 0");
     nombre =   number+"0";
@@ -135,6 +174,8 @@ function zero() {
     number = parseInt(nombre);
     console.log("adition", number);
     var affichage = document.getElementById('print_number');
+    affichage.innerHTML = number ;
+    var affichage = document.getElementById('print_numbersl');
     affichage.innerHTML = number ;
 }
 function equal(){
@@ -161,7 +202,11 @@ function equal(){
     }
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = calculeop+calcule;
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = calculeop+calcule;
     var affichage = document.getElementById('print_number');
+    affichage.innerHTML = calcule ;
+    var affichage = document.getElementById('print_numbersl');
     affichage.innerHTML = calcule ;
     console.log("nombre", number);
     console.log("calcule", calcule);
@@ -170,6 +215,8 @@ function equal(){
 function plus(){
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "+";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "+";
     if (calculeadd != 0){
         calcule = calculeadd ;
         calculeadd = 0;
@@ -195,8 +242,12 @@ function plus(){
 function reset(){
     var affichage = document.getElementById('affichage');
     affichage.innerHTML = "Calcule";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "Calculatrice";
     var affichageaddition = document.getElementById('print_number');
     affichageaddition.innerHTML = "Calculatrice";
+    var affichageaddition = document.getElementById('print_numbersl');
+    affichageaddition.innerHTML = "Calcule";
     nombre =  0;
     number =  0;
     calcule = 0;
@@ -209,6 +260,8 @@ function reset(){
 function moins(){
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "-";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "-";
     if (calculeadd != 0){
         calcule = calculeadd ;
         calculeadd = 0;
@@ -233,6 +286,8 @@ function moins(){
 function multi(){
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "*";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "*";
     if (calculeadd != 0){
         calcule = calculeadd ;
         calculeadd = 0;
@@ -257,6 +312,8 @@ function multi(){
 function div(){
     var affichageaddition = document.getElementById('affichage');
     affichageaddition.innerHTML = "/";
+    var affichageaddition2 = document.getElementById('affichagesl');
+    affichageaddition2.innerHTML = "/";
     if (calculeadd != 0){
         calcule = calculeadd ;
         calculeadd = 0;
