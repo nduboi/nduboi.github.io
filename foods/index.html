@@ -14,14 +14,14 @@
     <script src="https://cdn.tailwindcss.com/"></script>
     <script src="main.js"></script>
 </head>
-<body class="h-screen w-screen bg-gray-100" onload="timetime()" >
-    <header class="flex grid items-center grid-cols-3 p-2 h-1/6">
+<body class="md:h-screen w-screen bg-gray-100" onload="timetime()" >
+    <header class="flex text-center grid items-center grid-cols-3 p-2 h-1/6">
         <p class="col-start-1 flex justify-center fredoka">Mon Compte</p>
         <p class="col-start-2 flex justify-center enseigne text-2xl">Foods Clikers</p>
         <p class="col-start-3 flex justify-center fredoka" id="money">Money : 0$</p>
     </header>
-    <main class="h-5/6 flex flex-col grid grid-cols-3 grid-rows-2 w-full gap-2 p-2">
-        <section class="flex flex-col justify-center items-center bg-white rounded-lg shadow-sm m-5 hover:m-4 hover:shadow-lg">
+    <main class="sm:h-full lg:h-4/5 flex flex-col md:grid md:grid-cols-3 md:grid-rows-3 lg:grid-rows-2 w-full gap-2 p-2">
+        <section class="md:row-span-2 lg:row-span-1 sm:h-full flex flex-col justify-center items-center bg-white rounded-lg shadow-sm m-5 hover:m-4 hover:shadow-lg">
             <h1 class="flex justify-center" id="pricecan">Cannelées (1$) </h1>
             <h1 class="flex justify-center" id="nbrcan">Vous avez : 0 Cannelée(s)</h1>
             <button class="flex justify-center mt-2" onclick="cookcannele()">Cuisiner</button>
@@ -32,15 +32,15 @@
             </div>
             <!-- Cannelées -->
         </section>
-        <section class="pt-4 flex flex-col justify-center  bg-white rounded-lg shadow-sm m-5 hover:m-4 hover:shadow-lg" id="cookiesbuymdl">
+        <section class="md:row-span-2 lg:row-span-1 md:h-full md:col-start-2 pt-4 flex flex-col justify-center  bg-white rounded-lg shadow-sm m-5 mb-2 hover:m-4 hover:shadow-lg" id="cookiesbuymdl">
             <button onclick="buy_150000()">BUY 15.000$</button>
             <!-- Cookies -->
         </section>
-        <section class="pt-4 flex flex-col justify-center  bg-white rounded-lg shadow-sm m-5 hover:m-4 hover:shadow-lg" id="milkshakebuymdl">
+        <section class="md:h-full md:row-span-2 lg:row-span-1 pt-4 flex flex-col justify-center  bg-white rounded-lg shadow-sm m-5 hover:m-4 hover:shadow-lg" id="milkshakebuymdl">
             <button onclick="buy_1500000()">BUY 1.500.000$</button>
             <!-- Milkshake -->
         </section>
-        <div class="grid grid-rows-2 justify-center flex flex-col m-2 row-start-2 col-start-2">
+        <div class="text-center grid grid-rows-2 justify-center flex flex-col m-2 md:mt-0 lg:mt-2 lg:row-start-2 md:row-start-3 col-start-2">
             <section class="m-2 p-2 col-start-1 row-start-1 col-span-2">
                 Changement de prix dans : <span id="time"></span>
             </section>
