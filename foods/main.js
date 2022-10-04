@@ -48,9 +48,9 @@ function buymoule(){
         money = money - prixmoule;
         money = Math.round(money * 100) / 100
         prixmoule = prixmoule + 10;
-        document.getElementById("moulebuy").innerHTML = "Achat d'un moule <br> ("+prixmoule+"$)";
-        document.getElementById("money").innerHTML = "Money : "+money+" $ ";
         moulenbr++;
+        document.getElementById("moulebuy").innerHTML = "Achat d'un moule <br> ("+prixmoule+"$) x"+moulenbr;
+        document.getElementById("money").innerHTML = "Money : "+money+" $ ";
     }else{
         alert("Vous n'avez pas assez d'argent");
     }
@@ -67,7 +67,7 @@ function buy_150000(){
         m15000 = 1 ;
         money = money - 15000;
         document.getElementById("money").innerHTML = "Money : "+money+"$";
-        document.getElementById("cookiesbuymdl").innerHTML = "<h1 class=\"flex justify-center\" id=\"cookiesprice\">Cookies (10$) </h1> <h1 class=\"flex justify-center\" id=\"nbrcookies\">Vous avez : 0 Cookies(s)</h1><button class=\"flex justify-center mt-2\" onclick=\"cookcookies()\">Cuisiner</button> <div class=\"flex grid grid-cols-2 grid-rows-2\"><button class=\"flex justify-center row-start-2\" id=\"furnacebuy\" onclick=\"buyfurnace()\">Achat d'un four <br> (50$)</button><input class=\"row-start-1 col-span-2 flex justify-center text-center p-1\" id=\"sellcookies\" type=\"number\" name=\"cookiv\" placeholder=\"Mise en vente de ...\" id=\"cookiv\"><button class=\"flex justify-center row-start-2\"  onclick=\"sellcookies()\">Vendre</button></div>";
+        document.getElementById("cookiesbuymdl").innerHTML = "<h1 class=\"flex justify-center\" id=\"cookiesprice\">Cookies (10$) </h1> <h1 class=\"flex justify-center\" id=\"nbrcookies\">Vous avez : 0 Cookies(s)</h1><button class=\"flex justify-center mt-2\" onclick=\"cookcookies()\">Cuisiner</button> <div class=\"flex grid grid-cols-2 grid-rows-2\"><button class=\"flex justify-center row-start-2\" id=\"furnacebuy\" onclick=\"buyfurnace()\">Achat d'un four <br> (50$) x1</button><input class=\"row-start-1 col-span-2 flex justify-center text-center p-1\" id=\"sellcookies\" type=\"number\" name=\"cookiv\" placeholder=\"Mise en vente de ...\" id=\"cookiv\"><button class=\"flex justify-center row-start-2\"  onclick=\"sellcookies()\">Vendre</button></div>";
     }else{
         alert("Vous n'avez pas assez d'argent");
     }
@@ -95,9 +95,9 @@ function buyfurnace(){
         money = money - prixfurace;
         money = Math.round(money * 100) / 100
         prixfurace = prixfurace + 50;
-        document.getElementById("furnacebuy").innerHTML = "Achat d'un four <br> ("+prixfurace+"$)";
-        document.getElementById("money").innerHTML = "Money : "+money+" $ ";
         furnacenbr++;
+        document.getElementById("furnacebuy").innerHTML = "Achat d'un four <br> ("+prixfurace+"$) x"+furnacenbr;
+        document.getElementById("money").innerHTML = "Money : "+money+" $ ";
     }else{
         alert("Vous n'avez pas assez d'argent");
     }
@@ -113,7 +113,7 @@ function buy_1500000(){
         m1500000 = 1 ;
         money = money - 1500000;
         document.getElementById("money").innerHTML = "Money : "+money+"$";
-        document.getElementById("milkshakebuymdl").innerHTML = "<h1 class=\"flex justify-center\" id=\"milkhaskeprice\">MilkShake (50$) </h1> <h1 class=\"flex justify-center\" id=\"nbrmilkshake\">Vous avez : 0 Milkshake(s)</h1><button class=\"flex justify-center mt-2\" onclick=\"cookmilkshake()\">Cuisiner</button> <div class=\"flex grid grid-cols-2 grid-rows-2\"><button class=\"flex justify-center row-start-2\" id=\"milkshakebuy\" onclick=\"buyblender()\">Achat d'un Blender <br> (500$)</button><input class=\"row-start-1 col-span-2 flex justify-center text-center p-1\" id=\"sellmilkshake\" type=\"number\" name=\"cookiv\" placeholder=\"Mise en vente de ...\" id=\"cookiv\"><button class=\"flex justify-center row-start-2\"  onclick=\"sellmilkshake()\">Vendre</button></div>";
+        document.getElementById("milkshakebuymdl").innerHTML = "<h1 class=\"flex justify-center\" id=\"milkhaskeprice\">MilkShake (50$) </h1> <h1 class=\"flex justify-center\" id=\"nbrmilkshake\">Vous avez : 0 Milkshake(s)</h1><button class=\"flex justify-center mt-2\" onclick=\"cookmilkshake()\">Cuisiner</button> <div class=\"flex grid grid-cols-2 grid-rows-2\"><button class=\"flex justify-center row-start-2\" id=\"milkshakebuy\" onclick=\"buyblender()\">Achat d'un Blender <br> (500$) x1</button><input class=\"row-start-1 col-span-2 flex justify-center text-center p-1\" id=\"sellmilkshake\" type=\"number\" name=\"cookiv\" placeholder=\"Mise en vente de ...\" id=\"cookiv\"><button class=\"flex justify-center row-start-2\"  onclick=\"sellmilkshake()\">Vendre</button></div>";
     }else{
         alert("Vous n'avez pas assez d'argent");
     }
@@ -144,9 +144,9 @@ function buyblender(){
         money = money - prixblender;
         money = Math.round(money * 100) / 100
         prixblender = prixblender + 200;
-        document.getElementById("milkshakebuy").innerHTML = "Achat d'un Blender <br> ("+prixblender+"$)";
-        document.getElementById("money").innerHTML = "Money : "+money+" $ ";
         blendernbr++;
+        document.getElementById("milkshakebuy").innerHTML = "Achat d'un Blender <br> ("+prixblender+"$) x"+blendernbr;
+        document.getElementById("money").innerHTML = "Money : "+money+" $ ";
     }else{
         alert("Vous n'avez pas assez d'argent");
     }
@@ -253,26 +253,26 @@ function load(){
 
         if(m15000 == 1){
         // Cookies
-        document.getElementById("cookiesbuymdl").innerHTML = "<h1 class=\"flex justify-center\" id=\"cookiesprice\">Cookies (10$) </h1> <h1 class=\"flex justify-center\" id=\"nbrcookies\">Vous avez : 0 Cookies(s)</h1><button class=\"flex justify-center mt-2\" onclick=\"cookcookies()\">Cuisiner</button> <div class=\"flex grid grid-cols-2 grid-rows-2\"><button class=\"flex justify-center row-start-2\" id=\"furnacebuy\" onclick=\"buyfurnace()\">Achat d'un four <br> (50$)</button><input class=\"row-start-1 col-span-2 flex justify-center text-center p-1\" id=\"sellcookies\" type=\"number\" name=\"cookiv\" placeholder=\"Mise en vente de ...\" id=\"cookiv\"><button class=\"flex justify-center row-start-2\"  onclick=\"sellcookies()\">Vendre</button></div>"
+        document.getElementById("cookiesbuymdl").innerHTML = "<h1 class=\"flex justify-center\" id=\"cookiesprice\">Cookies (10$) </h1> <h1 class=\"flex justify-center\" id=\"nbrcookies\">Vous avez : 0 Cookies(s)</h1><button class=\"flex justify-center mt-2\" onclick=\"cookcookies()\">Cuisiner</button> <div class=\"flex grid grid-cols-2 grid-rows-2\"><button class=\"flex justify-center row-start-2\" id=\"furnacebuy\" onclick=\"buyfurnace()\">Achat d'un four <br> (50$) x1</button><input class=\"row-start-1 col-span-2 flex justify-center text-center p-1\" id=\"sellcookies\" type=\"number\" name=\"cookiv\" placeholder=\"Mise en vente de ...\" id=\"cookiv\"><button class=\"flex justify-center row-start-2\"  onclick=\"sellcookies()\">Vendre</button></div>"
         cookies = Math.floor(localStorage.getItem("cookies"));
         furnacenbr = Math.floor(localStorage.getItem("furnacenbr"));
         prixfurace = Math.floor(localStorage.getItem("prixfurnace"));
         pricecookies = Math.floor((localStorage.getItem("pricecookies")*100))/100;
         document.getElementById("nbrcookies").innerHTML = "Vous avez : "+cookies+" Cookies ";
-        document.getElementById("furnacebuy").innerHTML = "Achat d'un four <br> ("+prixfurace+"$)";
+        document.getElementById("furnacebuy").innerHTML = "Achat d'un four <br> ("+prixfurace+"$) x1";
         document.getElementById("cookiesprice").innerHTML = "Cookies ("+pricecookies+"$)";
 
         }
         if(m1500000 == 1){
         //Milkshake
-        document.getElementById("milkshakebuymdl").innerHTML = "<h1 class=\"flex justify-center\" id=\"milkhaskeprice\">MilkShake (50$) </h1> <h1 class=\"flex justify-center\" id=\"nbrmilkshake\">Vous avez : 0 Milkshake(s)</h1><button class=\"flex justify-center mt-2\" onclick=\"cookmilkshake()\">Cuisiner</button> <div class=\"flex grid grid-cols-2 grid-rows-2\"><button class=\"flex justify-center row-start-2\" id=\"milkshakebuy\" onclick=\"buyblender()\">Achat d'un Blender <br> (500$)</button><input class=\"row-start-1 col-span-2 flex justify-center text-center p-1\" id=\"sellmilkshake\" type=\"number\" name=\"cookiv\" placeholder=\"Mise en vente de ...\" id=\"cookiv\"><button class=\"flex justify-center row-start-2\"  onclick=\"sellmilkshake()\">Vendre</button></div>";
+        document.getElementById("milkshakebuymdl").innerHTML = "<h1 class=\"flex justify-center\" id=\"milkhaskeprice\">MilkShake (50$) </h1> <h1 class=\"flex justify-center\" id=\"nbrmilkshake\">Vous avez : 0 Milkshake(s)</h1><button class=\"flex justify-center mt-2\" onclick=\"cookmilkshake()\">Cuisiner</button> <div class=\"flex grid grid-cols-2 grid-rows-2\"><button class=\"flex justify-center row-start-2\" id=\"milkshakebuy\" onclick=\"buyblender()\">Achat d'un Blender <br> (500$) x1</button><input class=\"row-start-1 col-span-2 flex justify-center text-center p-1\" id=\"sellmilkshake\" type=\"number\" name=\"cookiv\" placeholder=\"Mise en vente de ...\" id=\"cookiv\"><button class=\"flex justify-center row-start-2\"  onclick=\"sellmilkshake()\">Vendre</button></div>";
         milkshake = Math.floor(localStorage.getItem("milkshake"));
         blendernbr = Math.floor(localStorage.getItem("blendernbr"));
         prixblender = Math.floor(localStorage.getItem("prixblender"));
         pricemilkshake = Math.floor((localStorage.getItem("pricemilkshake")*100))/100;
         document.getElementById("nbrmilkshake").innerHTML = "Vous avez : "+milkshake+" Milkshake(s) ";
         document.getElementById("milkhaskeprice").innerHTML = "Milkshake ("+pricemilkshake+"$)";
-        document.getElementById("milkshakebuy").innerHTML = "Achat d'un Blender <br> ("+prixblender+"$)";
+        document.getElementById("milkshakebuy").innerHTML = "Achat d'un Blender <br> ("+prixblender+"$) x1";
         }
         // Argent
         money = Math.floor((localStorage.getItem("money")*100))/100;

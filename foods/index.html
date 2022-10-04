@@ -14,7 +14,7 @@
     <script src="https://cdn.tailwindcss.com/"></script>
     <script src="main.js"></script>
 </head>
-<body class="md:h-screen w-screen bg-gray-100" onload="timetime()" >
+<body class="md:h-screen w-screen bg-gray-100" onload="timetime(), load()" onbeforeunload="save()" >
     <header class="flex text-center grid items-center grid-cols-3 p-2 h-1/6">
         <p class="col-start-1 flex justify-center fredoka">Mon Compte</p>
         <p class="col-start-2 flex justify-center enseigne text-2xl">Foods Clikers</p>
@@ -26,7 +26,7 @@
             <h1 class="flex justify-center" id="nbrcan">Vous avez : 0 Cannelée(s)</h1>
             <button class="flex justify-center mt-2" onclick="cookcannele()">Cuisiner</button>
             <div class="flex grid grid-cols-2 grid-rows-2">
-                <button class="flex justify-center row-start-2" id="moulebuy" onclick="buymoule()">Achat d'un moule <br> (10$)</button>
+                <button class="flex justify-center row-start-2" id="moulebuy" onclick="buymoule()">Achat d'un moule <br> (10$) x1</button>
                 <input class="row-start-1 col-span-2 flex justify-center text-center p-1" id="sellcannum" type="number" name="canv" placeholder="Mise en vente de ..." id="canv">
                 <button class="flex justify-center row-start-2"  onclick="sellcan()">Vendre</button>
             </div>
@@ -44,8 +44,8 @@
             <section class="m-2 p-2 col-start-1 row-start-1 col-span-2">
                 Changement de prix dans : <span id="time"></span>
             </section>
-            <button class="m-2 p-2 col-start-1 row-start-2" onclick="save()">Sauvegarder</button>
-            <button class="m-2 p-2 col-start-2 row-start-2" onclick="load()">Charger</button>
+            <!-- <button class="m-2 p-2 col-start-1 row-start-2" onclick="save()">Sauvegarder</button>
+            <button class="m-2 p-2 col-start-2 row-start-2" onclick="load()">Charger</button> -->
         </div>
     </main>
 </body>
