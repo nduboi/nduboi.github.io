@@ -243,7 +243,7 @@ function load(){
         prixmoule = Math.floor(localStorage.getItem("prixmoule"));
         pricecan = Math.floor((localStorage.getItem("pricecan")*100))/100;
         document.getElementById("nbrcan").innerHTML = "Vous avez : "+cannele+" Cannelée(s) ";
-        document.getElementById("moulebuy").innerHTML = "Achat d'un moule <br> ("+prixmoule+"$)";
+        document.getElementById("moulebuy").innerHTML = "Achat d'un moule <br> ("+prixmoule+"$) x"+moulenbr;
         document.getElementById("pricecan").innerHTML = "Cannelées ("+pricecan+"$)";
 
 
@@ -259,7 +259,7 @@ function load(){
         prixfurace = Math.floor(localStorage.getItem("prixfurnace"));
         pricecookies = Math.floor((localStorage.getItem("pricecookies")*100))/100;
         document.getElementById("nbrcookies").innerHTML = "Vous avez : "+cookies+" Cookies ";
-        document.getElementById("furnacebuy").innerHTML = "Achat d'un four <br> ("+prixfurace+"$) x1";
+        document.getElementById("furnacebuy").innerHTML = "Achat d'un four <br> ("+prixfurace+"$) x"+furnacenbr;
         document.getElementById("cookiesprice").innerHTML = "Cookies ("+pricecookies+"$)";
 
         }
@@ -272,7 +272,7 @@ function load(){
         pricemilkshake = Math.floor((localStorage.getItem("pricemilkshake")*100))/100;
         document.getElementById("nbrmilkshake").innerHTML = "Vous avez : "+milkshake+" Milkshake(s) ";
         document.getElementById("milkhaskeprice").innerHTML = "Milkshake ("+pricemilkshake+"$)";
-        document.getElementById("milkshakebuy").innerHTML = "Achat d'un Blender <br> ("+prixblender+"$) x1";
+        document.getElementById("milkshakebuy").innerHTML = "Achat d'un Blender <br> ("+prixblender+"$) x"+blendernbr;
         }
         // Argent
         money = Math.floor((localStorage.getItem("money")*100))/100;
