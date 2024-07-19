@@ -1,49 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ce site est crée par Nduboi (Noa Roussiere), il permet de référencer des projet web, il permet aussi fait aussi réfernce à mon github">
     <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="keywords" content="nduboi, noa roussiere" />
-    <link rel="shortcut icon" href="https://nduboi.go.zd.fr/img/favicon.ico" type="image/x-icon">
-    <title>Nduboi Noa Roussiere</title>
+    <title>Nduboi</title>
 </head>
 <body class="bg-gray-200">
-    <main class="flex justify-center">
-        <section class="container p-8 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-            <a href="foods/">
-                <div class="m-5 shadow-md rounded-lg overflow-hidden hover:shadow-2xl bg-white p-5">
-                    Foods Clicker
+    <header class="lg:h-[60vh]">
+        <h1 class="font-bold text-2xl h-1/6 pl-[3vw] w-full pt-5">Nduboi (Noa Roussiere)</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-4 w-full">
+            <div class="flex justify-center p-4">
+                <img class="w-3/4 sm:w-1/2 lg:w-[19vw]" alt="Photo de profil de Noa Roussiere (Nduboi)" src="https://scontent-cdg4-2.cdninstagram.com/v/t39.30808-6/364633080_18272936836198407_2819463113311991899_n.jpg?stp=dst-jpg_e15_q60&cb=9ad74b5e-1e1a517a&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyLmYzMDgwOC53ZWJwX3E2MF8wNzEwIn0&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=103&_nc_ohc=e9mlo9U0SJEQ7kNvgGzN7h4&gid=835e5230aff542d490d1c0f43efaf8ff&edm=AEhyXUkAAAAA&ccb=7-5&ig_cache_key=MzE1ODk4MjU0MTExMzAwNDQwNQ%3D%3D.2-ccb7-5&oh=00_AYApfjqZmRDqkq9tZ9vj-dG2uBZr1scUfDdfhJHYkOwoeg&oe=66A09C99&_nc_sid=8f1549" width="370" height="350">
+            </div>
+            <div class="col-start-1 lg:col-start-2 col-span-3 flex flex-col items-center justify-center p-4">
+                <p class="text-base sm:text-lg lg:text-xl">Je m'appelle Noa Roussiere, également connu sous le nom de Nduboi. <br><br> Actuellement, je suis étudiant en développement informatique à Epitech, où je me spécialise dans le développement web. <br> En dehors de mes études, j'ai plusieurs hobbies, notamment la natation, la plongée en mer et l'exploration du monde spatial.
+                    <br><br>Je vous invite à découvrir mon portfolio, qui présente divers projets axés sur le web que j'ai réalisés. <br><br>Ces projets reflètent non seulement mes compétences techniques, mais aussi ma passion pour la création et l'innovation dans le domaine du développement web. <br><br>Si mon profil vous intéresse, je vous invite à consulter mon CV en cliquant <a target="_blank" class="underline text-blue-400" href="https://media.licdn.com/dms/image/D4E2DAQFWUXjHR-FEKg/profile-treasury-image-shrink_1280_1280/0/1709377809942?e=1722027600&v=beta&t=Rn8hnrlDDfxR0ItLk-CVs4HLm2JWuqMgEhBAhqGMfmA">ICI</a>.</p>
+            </div>
+        </div>
+    </header>
+    <main class="flex flex-col md:pt-5 md:pl-5 h-full lg:h-screen">
+        <section class="flex justify-center items-center p-8 grid gap-4 lg:h-full lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+            <a href="https://github.com/nduboi/Action-ou-verite" target="_blank" rel="noopener noreferrer" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4">
+                <div class="text-center">
+                    <p class="font-bold">Action ou vérité</p>
+                    <p>Un jeu interactif pour animer vos soirées entre amis.</p>
                 </div>
             </a>
-            <a href="calculatrice/">
-                <div class="m-5 shadow-md rounded-lg overflow-hidden hover:shadow-2xl bg-white p-5">
-                    Calculatrice
+            <a href="foods/" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4">
+                <div class=" text-center">
+                    <p class="font-bold">Foods Clicker</p>
+                    <p>Un jeu de clic simple et amusant sur le thème de la nourriture.</p>
                 </div>
             </a>
-            <a href="citations/">
-                <div class="m-5 shadow-md rounded-lg overflow-hidden hover:shadow-2xl bg-white p-5">
-                    Citations
+            <a href="calculatrice/" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4">
+                <div class=" text-center">
+                    <p class="font-bold">Calculatrice</p>
+                    <p>Une calculatrice en ligne pratique pour tous vos besoins.</p>
                 </div>
             </a>
-            <a href="departements/">
-                <div class="m-5 shadow-md rounded-lg overflow-hidden hover:shadow-2xl bg-white p-5">
-                    Départements
+            <a href="citations/" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4">
+                <div class=" text-center">
+                    <p class="font-bold">Citations</p>
+                    <p>Découvrez et partagez des citations inspirantes.</p>
                 </div>
             </a>
-            <a href="https://github.com/nduboi/Action-ou-verite" target="_blank" rel="noopener noreferrer">
-                <div class="m-5 shadow-md rounded-lg overflow-hidden hover:shadow-2xl bg-white p-5">
-                    Action ou vérité
+            <a href="departements/" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4">
+                <div class=" text-center">
+                    <p class="font-bold">Départements</p>
+                    <p>Informations sur les départements français.</p>
                 </div>
             </a>
-            <a href="https://github.com/nduboi" target="_blank" rel="noopener noreferrer">
-                <div class="m-5 shadow-md rounded-lg overflow-hidden hover:shadow-2xl bg-white p-5">
-                    Github
+            <a href="https://github.com/nduboi" target="_blank" rel="noopener noreferrer" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4">
+                <div class=" text-center">
+                    <p class="font-bold">Github</p>
+                    <p>Voir plus de projets sur mon profil Github.</p>
                 </div>
             </a>
         </section>
     </main>
+    <footer class="h-[5vh] w-full flex justify-center items-center bg-gray-300 p-4">
+        <p class="text-center">Nduboi 2024</p>
+    </footer>
 </body>
 </html>
