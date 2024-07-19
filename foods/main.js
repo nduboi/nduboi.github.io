@@ -15,7 +15,6 @@ prixblender = 500;
 m15000= 0;
 m1500000 = 0 ;
 
-
 secondes = 300;
 
 pricecan = 1 ;
@@ -24,12 +23,11 @@ pricemilkshake = 50;
 
 const sleep = ms => new Promise(res => setTimeout(res, ms));
 
-
-
 function cookcannele(){
     cannele= moulenbr + cannele;
     document.getElementById("nbrcan").innerHTML = "Vous avez : "+cannele+" Cannelée(s) ";
 }
+
 function sellcan(){
     numbersellcan = document.getElementById("sellcannum").value;
     if(cannele >= numbersellcan){
@@ -43,6 +41,7 @@ function sellcan(){
     }
     return false;
 }
+
 function buymoule(){
     if(money >= prixmoule){
         money = money - prixmoule;
@@ -55,12 +54,6 @@ function buymoule(){
         alert("Vous n'avez pas assez d'argent");
     }
 }
-
-
-
-
-
-
 
 function buy_150000(){
     if(money >= 15000){
@@ -77,6 +70,7 @@ function cookcookies(){
     cookies= furnacenbr + cookies;
     document.getElementById("nbrcookies").innerHTML = "Vous avez : "+cookies+" Cookies ";
 }
+
 function sellcookies(){
     numbersellcookies = document.getElementById("sellcookies").value;
     if(cookies >= numbersellcookies){
@@ -90,6 +84,7 @@ function sellcookies(){
     }
     return false;
 }
+
 function buyfurnace(){
     if(money >= prixfurace){
         money = money - prixfurace;
@@ -103,11 +98,6 @@ function buyfurnace(){
     }
 }
 
-
-
-
-
-
 function buy_1500000(){
     if(money >= 1500000){
         m1500000 = 1 ;
@@ -118,8 +108,6 @@ function buy_1500000(){
         alert("Vous n'avez pas assez d'argent");
     }
 }
-
-
 
 function cookmilkshake(){
     milkshake= blendernbr + milkshake;
@@ -139,6 +127,7 @@ function sellmilkshake(){
     }
     return false;
 }
+
 function buyblender(){
     if(money >= prixblender){
         money = money - prixblender;
@@ -151,20 +140,6 @@ function buyblender(){
         alert("Vous n'avez pas assez d'argent");
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 async function timetime(){
     if(secondes == 0){
@@ -190,20 +165,6 @@ async function timetime(){
     }
     timetime();
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function save(){
     // Cannelées
@@ -233,8 +194,6 @@ function save(){
     //Plus
     localStorage.setItem("affichage", 1);
 }
-
-
 
 function load(){
     if(localStorage.getItem("affichage") == 1){
@@ -277,8 +236,6 @@ function load(){
         // Argent
         money = Math.floor((localStorage.getItem("money")*100))/100;
         document.getElementById("money").innerHTML = "Money : "+money+" $ ";
-    }else{
-        alert("Vous n'avez pas sauvegarder de partie");
     }
 }
 

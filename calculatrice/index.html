@@ -8,15 +8,21 @@
     <link rel="shortcut icon" href="build/img/favicon.ico" type="image/x-icon">
     <meta name="google-site-verification" content="BUcRCfHLlLtNutPYcBtjG4Eg2_agJBUpEakF2FByoBE" />
     <title>Caluclatrice</title>
-    <body class="bg-gray-100 ">
-        <main class="flex justify-center">
+    <body class="bg-gray-100">
+        <header class="h-[20vh] lg:w-screen">
+            <h1 class="font-bold text-center lg:text-xl pt-2 h-1/6">Projet Calculatrice</h1>
+            <div class="flex justify-center items-center h-5/6">
+                <p class="text-center sm:text-lg lg:text-lg">Ce projet fut crée en 2022 il fut l'un de mes premier projet manipulant le Javascript. <br><br>Lien vers le code source présent sur github <a target="_blank" class="underline text-blue-400" href="https://github.com/nduboi/calculatrice-js.html">ICI</a></p>
+            </div>
+        </header>
+        <main class="flex justify-center h-[80vh]">
             <section class="container lg:p-8  md:p-5 grid grid-cols-4.75 gird-rows-5 lg:grid-rows-4 lg:grid-cols-5 md:grid-cols-4 md:grid-rows-6 sm:grid-rows-8 sm:grid-cols-4">
-                <div id="print_number" class=" sm:col-start-1 sm:row-satrt-1 md:col-start-1 md:row-start-1 lg:row-start-1 lg:col-start-1 lg:col-span-1 md:col-span-1 sm:col-span-2 invisible sm:visible row-start-1 col-start-4 sm:visible md:visible lg:visible m-5 shadow-md rounded-lg overflow-hidden  bg-white p-5  ">Calculatrice</div> 
-                <div id="print_numbersl" class="sm:col-start-3 sm:row-start-1 lg:row-start-1 lg:col-start-1 md:row-start-1 md:col-start-1 row-start-1 col-start-4 sm:invisible md:invisible lg:invisible visible  sm:visible md:visible m-5 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1  ">Calucle</div> 
-                <div class="sm:col-start-3 sm:row-start-1 md:col-start-2 md:row-start-1 lg:col-start-1 lg:row-start-4 invisible  sm:visible col-span-3 col-start-1 row-start-1 m-5 shadow-md rounded-lg overflow-hidden  bg-white p-5  md:col-span-3 sm:col-span-3 lg:col-span-1 " lg:row-start-4="" lg:col-start-1="" md:row-start-1="" md:col-start-3="">
+                <div id="print_number" class="flex items-center justify-center sm:col-start-1 sm:row-satrt-1 md:col-start-1 md:row-start-1 lg:row-start-1 lg:col-start-1 lg:col-span-1 md:col-span-1 sm:col-span-2 invisible sm:visible row-start-1 col-start-4 sm:visible md:visible lg:visible m-5 shadow-md rounded-lg overflow-hidden  bg-white p-5  ">Calculatrice</div>
+                <div id="print_numbersl" class="sm:col-start-3 sm:row-start-1 lg:row-start-1 lg:col-start-1 md:row-start-1 md:col-start-1 row-start-1 col-start-4 sm:invisible md:invisible lg:invisible visible  sm:visible md:visible m-5 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1  ">Calcule</div>
+                <div class="sm:col-start-3 sm:row-start-1 md:col-start-2 md:row-start-1 lg:col-start-1 lg:row-start-4 invisible flex items-center justify-center sm:visible col-span-3 col-start-1 row-start-1 m-5 shadow-md rounded-lg overflow-hidden  bg-white p-5  md:col-span-3 sm:col-span-3 lg:col-span-1 " lg:row-start-4="" lg:col-start-1="" md:row-start-1="" md:col-start-3="">
                     <p id="affichage">Calcule</p>
                 </div>
-                <div class="visible sm:invisible md:invisible sm:col-start-1 md:col-start-1 md:row-start-1 sm:row-start-1 lg:col-start-1 lg:row-start-4 col-span-3 col-start-1 row-start-1 m-5 shadow-md rounded-lg overflow-hidden  bg-white p-5  md:col-span-1 sm:col-span-3 lg:col-span-1 " lg:row-start-4="" lg:col-start-1="" md:row-start-1="" md:col-start-3="">
+                <div class="lg:flex lg:items-center lg:justify-center visible sm:invisible md:invisible sm:col-start-1 md:col-start-1 md:row-start-1 sm:row-start-1 lg:col-start-1 lg:row-start-4 col-span-3 col-start-1 row-start-1 m-5 shadow-md rounded-lg overflow-hidden  bg-white p-5  md:col-span-1 sm:col-span-3 lg:col-span-1 " lg:row-start-4="" lg:col-start-1="" md:row-start-1="" md:col-start-3="">
                     <p id="affichagesl">Calculatrice</p>
                 </div>
                 <button id="one" class="row-start-2 col-start-1 sm:row-start-2 sm:col-start-1 lg:row-start-1 lg:col-start-2 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center md:row-start-2 md:col-start-1" onclick="one()">
@@ -55,7 +61,6 @@
                 <button id="moins" onclick="moins()" class="row-start-3 col-start-4 sm:row-start-3 sm:col-start-4 lg:row-start-2 lg:col-start-5 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center md:row-start-3 md:col-start-4">-</button>
                 <button id="multi" onclick="multi()" class="row-start-4 col-start-4 sm:row-start-4 sm:col-start-4 lg:row-start-3 lg:col-start-5 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center md:row-start-4 md:col-start-4">*</button>
                 <button id="div" onclick="div()" class="row-start-5 col-start-4 sm:row-start-5 sm:col-start-4 lg:row-start-4 lg:col-start-5 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center md:row-start-5 md:col-start-4">/</button>
-    
                 <button id="equal" onclick="equal()" class="md:visible row-start-5 col-start-3 sm:row-start-5 sm:col-start-3 sm:visible md:row-start-5 md:col-start-3 lg:visible lg:row-start-4 lg:col-start-4 hover:shadow-xl m-3 shadow-md rounded-lg overflow-hidden  bg-white p-5 lg:col-span-1 md:col-span-1 sm:col-span-1 text-center ">
                     <div class="">=</div>
                 </button>

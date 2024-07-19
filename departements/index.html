@@ -4,95 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Déparements France</title>
+    <title>Départements France</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <script src="build/script/main.js"></script> -->
 </head>
-    <body class="bg-gray-100 h-screen w-screen">
-        <main class="flex justify-center">
-            <section class="container grid lg:gap-2 lg:grid-cols-4 lg:gird-rows-6 h-full w-full">
-                <div id="header" class="lg:col-span-1 lg:row-span-4 lg:row-start-2 lg:col-start-1 lg:m-2 shadow-md overflow-hidden rounded-lg bg-white p-10 text-center">
-                    <!-- Début Demande -->
-                    <label for="departement">
-                        <input type="text" id="departement" placeholder="Numéro du département"/>
-                    </label>
-                    <button id="btn">Rechercher</button>
-                    <!-- Fin Demande -->
+<body class="bg-gray-100 h-screen w-screen">
+    <header class="lg:h-[20vh] lg:w-screen">
+        <h1 class="font-bold text-center lg:text-xl pt-2 h-1/6">Projet Départements</h1>
+        <div class="flex justify-center items-center h-5/6">
+            <p class="text-center sm:text-lg lg:text-lg">Ce projet fut crée en 2022 il fut l'un de mes premier projet manipulant les listes en JavaScript</p>
+        </div>
+    </header>
+    <main class="flex justify-center">
+        <section class="container grid lg:gap-2 lg:grid-cols-4 lg:grid-rows-6 h-full w-full">
+            <div id="search-header" class="lg:col-span-1 lg:row-span-4 lg:row-start-2 lg:col-start-1 lg:m-2 shadow-md overflow-hidden rounded-lg bg-white p-10 text-center">
+                <label for="departement">
+                    <input type="text" id="departement" class="p-2 border rounded" placeholder="Numéro du département" aria-label="Numéro du département"/>
+                </label>
+                <button id="btn" class="ml-2 p-2 bg-blue-500 text-white rounded">Rechercher</button>
+            </div>
+            <div id="result-header" class="lg:col-span-1 lg:row-span-4 lg:row-start-2 lg:col-start-4 lg:m-2 shadow-md overflow-hidden rounded-lg bg-white p-10 text-center">
+                <div id="screen">Départements</div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const ndep = ['Ain', 'Aisne', 'Allier', 'Alpes-de-Haute-Provence', 'Hautes-Alpes', 'Alpes-Maritimes', 'Ardèche', 'Ardennes', 'Ariège', 'Aube', 'Aude', 'Aveyron', 'Bouches-du-Rhône', 'Calvados','Cantal','Charente','Charente-Maritime','Cher','Corrèze','Corse-du-Sud','Haute-Corse','Côte-d\'Or','Creuse','Dordogne','Doubs','Drôme','Eure','Eure-et-Loir','Finistère','Gard','Haute-Garonne','Gers','Gironde','Hérault','Ille-et-Vilaine','Indre','Indre-et-Loire','Isère','Jura','Landes','Loir-et-Cher','Loire','Haute-Loire','Loire-Atlantique','Loiret','Lot','Lot-et-Garonne','Lozère','Maine-et-Loire','Manche','Marne','Haute-Marne','Mayenne','Meurthe-et-Moselle','Meuse','Morbihan','Moselle','Nièvre','Nord','Oise','Orne','Pas-de-Calais','Puy-de-Dôme','Pyrénées-Atlantiques','Hautes-Pyrénées','Pyrénées-Orientales','Bas-Rhin','Haut-Rhin','Rhône','Haute-Saône','Saône-et-Loire','Sarthe','Savoie','Haute-Savoie','Paris','Seine-Maritime','Seine-et-Marne','Yvelines','Deux-Sèvres','Somme','Tarn','Tarn-et-Garonne','Var','Vaucluse','Vendée','Vienne','Haute-Vienne','Vosges','Yonne','Territoire-de-Belfort','Essonne','Hauts-de-Seine','Seine-Saint-Denis','Val-de-Marne','Val-d\'Oise','Guadeloupe','Martinique','Guyane','La Réunion','Mayotte'];
 
-                </div> 
-                <div id="header" class="lg:col-span-1 lg:row-span-4 lg:row-start-2 lg:col-start-4 lg:m-2 shadow-md overflow-hidden rounded-lg bg-white p-10 text-center">
-                    <!-- Début Réponse -->
-                    <div id="screen">Départements</div>
-                    <!-- Fin Réponse -->
-                </div>
-            </section>
-        </main>
-    </body>
+        const departementMap = {
+            '2A': 'Corse-du-Sud',
+            '2a': 'Corse-du-Sud',
+            '2B': 'Haute-Corse',
+            '2b': 'Haute-Corse',
+            '971': 'Guadeloupe',
+            '972': 'Martinique',
+            '973': 'Guyane',
+            '974': 'La Réunion',
+            '976': 'Mayotte'
+        };
+
+        document.getElementById('btn').addEventListener('click', () => {
+            const departement = document.getElementById('departement').value.trim();
+            let displayText = 'Département Inconnu';
+
+            if (departementMap[departement]) {
+                displayText = departementMap[departement];
+            } else if (!isNaN(departement) && departement > 0 && departement <= 95) {
+                displayText = ndep[departement - 1];
+            }
+
+            document.getElementById('screen').innerHTML = displayText;
+        });
+    </script>
+</body>
 </html>
-
-<script> 
-var departement = 0;  
-let ndep = ['Ain', 'Aisne', 'Allier', 'Alpes-de-haute-Provence', 'Hautes-Alpes', 'Alpes-Maritimes', 'Ardèche', 'Ardennes', 'Ariège', 'Aube', 'Aude', 'Aveyron', 'Bouche-du-Rhone', 'Calvados','Cantal','Charente','Charente-Maritime','Cher','Corrèze','Corse-du-Sud','Haute-Corse','Côte-d\'Or','Creuse','Dordogne','Doubs','Drôme','Eure','Eure-et-Loir','Finistère','Gard','Haute-Garonne','Gers','Gironde','Hérault','Ille-et-Vilaine','Indre','Indre-et-Loire','Isère','Jura','Landes','Loir-et-Cher','Loire','Haute-Loire','Loire-Atlantique','Loiret','Lot','Lot-et-Garonne','Lozère','Maine-et-Loire','Manche','Marne','Haute-Marne','Mayenne','Meurthe-et-Moselle','Meuse','Morbihan','Moselle','Nièvre','Nord','Oise','Orne','Pas-de-Calais','Puy-de-Dôme','Pyrénées-Atlantiques','Hautes-Pyrénées','Pyrénées-Orientales','Bas-Rhin','Haut-Rhin','Rhône','Haute-Saône','Saône-et-Loire','Sarthe','Savoie','Haute-Savoie','Paris','Seine-Maritime','Seine-et-Marne','Yvelines','Deux-Sèvres','Somme','Tarn','Tarn-et-Garonne','Var','Vaucluse','Vendée','Vienne','Haute-Vienne','Vosges','Yonne','Territoire-de-Belfort','Essonne','Hauts-de-Seine','Seine-Saint-Denis','Val-de-Marne','Val-d\'Oise','Guadeloupe','Martinique','Guyane','La-Réunion','Mayotte'];
-var fdep ="";
-btn.onclick = () => {
-    departement = document.getElementById('departement').value;
-    console.log('departement', departement);
-    if (departement == '2A') {
-        document.getElementById('screen').innerHTML
-        document.getElementById('screen').innerHTML = 'Corse-du-Sud' ;
-        return true;
-    }
-    if (departement == '2a') {
-        document.getElementById('screen').innerHTML
-        document.getElementById('screen').innerHTML = 'Corse-du-Sud' ;
-        return true;
-    }
-    if (departement == '2B') {
-        document.getElementById('screen').innerHTML
-        document.getElementById('screen').innerHTML = 'Haute-Corse' ;
-        return true;
-    }
-    if (departement == '2b') {
-        document.getElementById('screen').innerHTML
-        document.getElementById('screen').innerHTML = 'Haute-Corse' ;
-        return true;
-    }
-    if (departement == 971) {
-        document.getElementById('screen').innerHTML
-        document.getElementById('screen').innerHTML = 'Guadeloupe' ;
-        return true;
-    }
-    if (departement == 972) {
-        document.getElementById('screen').innerHTML
-        document.getElementById('screen').innerHTML = 'Martinique' ;
-        return true;
-    }
-    if (departement == 973) {
-        document.getElementById('screen').innerHTML
-        document.getElementById('screen').innerHTML = 'Guyane' ;
-        return true;
-    }
-    if (departement == 974) {
-        document.getElementById('screen').innerHTML
-        document.getElementById('screen').innerHTML = 'La-Reunion' ;
-        return true;
-    }
-    if (departement == 976) {
-        document.getElementById('screen').innerHTML
-        document.getElementById('screen').innerHTML = 'Mayotte' ;
-        return true;
-    }
-    if (departement >0 && departement <=95) {
-        fdepartement = ndep[departement - 1];
-        document.getElementById('screen').innerHTML
-        document.getElementById('screen').innerHTML = fdepartement;
-        return true;
-    }else{
-        // Département Inconnu
-        document.getElementById('screen').innerHTML 
-        document.getElementById('screen').innerHTML = 'Département Inconnu';
-        return true;
-    }
-    return true;
-}
-</script>
