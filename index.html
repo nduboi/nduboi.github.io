@@ -9,6 +9,7 @@
 </head>
 <body class="bg-gray-200">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
         .image_move {
             animation: image_movement 1.5s forwards ease-out;
         }
@@ -20,26 +21,43 @@
                 transform: translateX(0%);
             }
         }
+        .name_opacity {
+            animation: name_opa 3s forwards ease-out;
+        }
+        @keyframes name_opa {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .montserrat-med500 {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+        }
         .text_move {
             animation: text_movement 1.5s forwards ease-out;
         }
         @keyframes text_movement {
             0% {
-                transform: translateY(-160%);
+                transform: translateX(160%);
             }
             100% {
-                transform: translateY(0%);
+                transform: translateX(0%);
             }
         }
     </style>
     <header class="lg:h-[60vh]">
-        <h1 class="font-bold text-2xl h-1/6 pl-[3vw] w-full pt-5">Nduboi (Noa Roussiere)</h1>
+        <h1 class="font-bold text-2xl h-1/6 pl-[3vw] w-full pt-5 name_opacity">Nduboi (Noa Roussiere)</h1>
         <div class="grid grid-cols-1 lg:grid-cols-4 w-full">
             <div class="flex justify-center p-4 image_move">
                 <img class="w-3/4 sm:w-1/2 lg:w-[19vw]" alt="Photo de profil de Noa Roussiere (Nduboi)" src="https://scontent-cdg4-2.cdninstagram.com/v/t39.30808-6/364633080_18272936836198407_2819463113311991899_n.jpg?stp=dst-jpg_e15_q60&cb=9ad74b5e-1e1a517a&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyLmYzMDgwOC53ZWJwX3E2MF8wNzEwIn0&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=103&_nc_ohc=e9mlo9U0SJEQ7kNvgGzN7h4&gid=835e5230aff542d490d1c0f43efaf8ff&edm=AEhyXUkAAAAA&ccb=7-5&ig_cache_key=MzE1ODk4MjU0MTExMzAwNDQwNQ%3D%3D.2-ccb7-5&oh=00_AYApfjqZmRDqkq9tZ9vj-dG2uBZr1scUfDdfhJHYkOwoeg&oe=66A09C99&_nc_sid=8f1549" width="370" height="350">
             </div>
             <div class="col-start-1 lg:col-start-2 col-span-3 flex flex-col items-center justify-center p-4">
-                <p class="text-base sm:text-lg lg:text-xl text_move">Je m'appelle Noa Roussiere, également connu sous le nom de Nduboi. <br><br> Actuellement, je suis étudiant en développement informatique à Epitech, où je me spécialise dans le développement web. <br> En dehors de mes études, j'ai plusieurs hobbies, notamment la natation, la plongée en mer et l'exploration du monde spatial.
+                <p class="text-base sm:text-lg lg:text-xl text_move montserrat-med500">Je m'appelle Noa Roussiere, également connu sous le nom de Nduboi. <br><br> Actuellement, je suis étudiant en développement informatique à Epitech, où je me spécialise dans le développement web. <br> En dehors de mes études, j'ai plusieurs hobbies, notamment la natation, la plongée en mer et l'exploration du monde spatial.
                     <br><br>Je vous invite à découvrir mon portfolio, qui présente divers projets axés sur le web que j'ai réalisés. <br><br>Ces projets reflètent non seulement mes compétences techniques, mais aussi ma passion pour la création et l'innovation dans le domaine du développement web. <br><br>Si mon profil vous intéresse, je vous invite à consulter mon CV en cliquant <a target="_blank" class="underline text-blue-400" href="https://media.licdn.com/dms/image/D4E2DAQFWUXjHR-FEKg/profile-treasury-image-shrink_1280_1280/0/1709377809942?e=1722027600&v=beta&t=Rn8hnrlDDfxR0ItLk-CVs4HLm2JWuqMgEhBAhqGMfmA">ICI</a>.</p>
             </div>
         </div>
