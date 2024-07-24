@@ -5,105 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="build/css/main.css">
     <title>Nduboi</title>
 </head>
-<body class="bg-gray-200">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-        .image_move {
-            animation: image_movement 1.5s forwards ease-out;
-        }
-        @keyframes image_movement {
-            0% {
-                transform: translateX(-70%);
-            }
-            100% {
-                transform: translateX(0%);
-            }
-        }
-        .name_opacity {
-            animation: name_opa 3s forwards ease-out;
-        }
-        @keyframes name_opa {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
-        }
-        .montserrat-med500 {
-            font-family: "Montserrat", sans-serif;
-            font-optical-sizing: auto;
-            font-weight: 500;
-            font-style: normal;
-        }
-        .text_move {
-            animation: text_movement 1.5s forwards ease-out;
-        }
-        @keyframes text_movement {
-            0% {
-                transform: translateX(160%);
-            }
-            100% {
-                transform: translateX(0%);
-            }
-        }
-    </style>
+<body class="bg-gray-200 dark:bg-gray-900 dark:text-gray-200">
     <header class="lg:h-[60vh]">
-        <h1 class="font-bold text-2xl h-1/6 pl-[3vw] w-full pt-5 name_opacity">Nduboi (Noa Roussiere)</h1>
+        <h1 class="font-bold text-2xl h-1/6 lg:pl-[3vw] w-full pt-[32px] text-center lg:text-start name_opacity">Nduboi (Noa Roussiere)</h1>
         <div class="grid grid-cols-1 lg:grid-cols-4 w-full">
             <div class="flex justify-center p-4 image_move">
-                <img class="w-3/4 sm:w-1/2 lg:w-[19vw]" alt="Photo de profil de Noa Roussiere (Nduboi)" src="https://scontent-cdg4-2.cdninstagram.com/v/t39.30808-6/364633080_18272936836198407_2819463113311991899_n.jpg?stp=dst-jpg_e15_q60&cb=9ad74b5e-1e1a517a&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyLmYzMDgwOC53ZWJwX3E2MF8wNzEwIn0&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=103&_nc_ohc=e9mlo9U0SJEQ7kNvgGzN7h4&gid=835e5230aff542d490d1c0f43efaf8ff&edm=AEhyXUkAAAAA&ccb=7-5&ig_cache_key=MzE1ODk4MjU0MTExMzAwNDQwNQ%3D%3D.2-ccb7-5&oh=00_AYApfjqZmRDqkq9tZ9vj-dG2uBZr1scUfDdfhJHYkOwoeg&oe=66A09C99&_nc_sid=8f1549" width="370" height="350">
+                <img class="w-3/4 sm:w-1/2 md:w-[19vw]" alt="Photo de profil de Noa Roussiere (Nduboi)" src="https://scontent-cdg4-2.cdninstagram.com/v/t39.30808-6/364633080_18272936836198407_2819463113311991899_n.jpg?stp=dst-jpg_e15_q60&cb=9ad74b5e-1e1a517a&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE4MDAuc2RyLmYzMDgwOC53ZWJwX3E2MF8wNzEwIn0&_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=103&_nc_ohc=e9mlo9U0SJEQ7kNvgGzN7h4&gid=835e5230aff542d490d1c0f43efaf8ff&edm=AEhyXUkAAAAA&ccb=7-5&ig_cache_key=MzE1ODk4MjU0MTExMzAwNDQwNQ%3D%3D.2-ccb7-5&oh=00_AYApfjqZmRDqkq9tZ9vj-dG2uBZr1scUfDdfhJHYkOwoeg&oe=66A09C99&_nc_sid=8f1549" width="370" height="350">
             </div>
             <div class="col-start-1 lg:col-start-2 col-span-3 flex flex-col items-center justify-center p-4">
-                <p class="text-base sm:text-lg lg:text-xl text_move montserrat-med500">Je m'appelle Noa Roussiere, également connu sous le nom de Nduboi. <br><br> Actuellement, je suis étudiant en développement informatique à Epitech, où je me spécialise dans le développement web. <br> En dehors de mes études, j'ai plusieurs hobbies, notamment la natation, la plongée en mer et l'exploration du monde spatial.
-                    <br><br>Je vous invite à découvrir mon portfolio, qui présente divers projets axés sur le web que j'ai réalisés. <br><br>Ces projets reflètent non seulement mes compétences techniques, mais aussi ma passion pour la création et l'innovation dans le domaine du développement web. <br><br>Si mon profil vous intéresse, je vous invite à consulter mon CV en cliquant <a target="_blank" class="underline text-blue-400" href="https://media.licdn.com/dms/image/D4E2DAQFWUXjHR-FEKg/profile-treasury-image-shrink_1280_1280/0/1709377809942?e=1722027600&v=beta&t=Rn8hnrlDDfxR0ItLk-CVs4HLm2JWuqMgEhBAhqGMfmA">ICI</a>.</p>
+                <p class="text-base sm:text-lg lg:text-xl text_move montserrat-med500 dark:text-gray-200">
+                    Je m'appelle Noa Roussiere, également connu sous le nom de Nduboi. <br><br> 
+                    Actuellement, je suis étudiant en développement informatique à Epitech, où je me spécialise dans le développement web. <br> 
+                    En dehors de mes études, j'ai plusieurs hobbies, notamment la natation, la plongée en mer et l'exploration du monde spatial.
+                    <br><br>
+                    Je vous invite à découvrir mon portfolio, qui présente divers projets axés sur le web que j'ai réalisés. <br><br>
+                    Ces projets reflètent non seulement mes compétences techniques, mais aussi ma passion pour la création et l'innovation dans le domaine du développement web. <br><br>
+                    Si mon profil vous intéresse, je vous invite à consulter mon CV en cliquant 
+                    <a target="_blank" class="underline text-blue-400 dark:text-yellow-500" href="https://media.licdn.com/dms/image/D4E2DAQFWUXjHR-FEKg/profile-treasury-image-shrink_1280_1280/0/1709377809942?e=1722027600&v=beta&t=Rn8hnrlDDfxR0ItLk-CVs4HLm2JWuqMgEhBAhqGMfmA">ICI</a>.
+                </p>
             </div>
         </div>
     </header>
     <main class="flex flex-col md:pt-5 md:pl-5 h-full lg:h-screen">
         <section class="flex justify-center items-center p-8 grid gap-4 lg:h-full lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-            <a href="https://github.com/nduboi/Action-ou-verite" target="_blank" rel="noopener noreferrer" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4">
+            <a href="https://github.com/nduboi/Action-ou-verite" target="_blank" rel="noopener noreferrer" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4 dark:bg-gray-800 dark:shadow-gray-700">
                 <div class="text-center">
-                    <p class="font-bold">Action ou vérité</p>
-                    <p>Un jeu interactif pour animer vos soirées entre amis.</p>
+                    <p class="font-bold dark:text-gray-200">Action ou vérité</p>
+                    <p class="dark:text-gray-200">Un jeu interactif pour animer vos soirées entre amis.</p>
                 </div>
             </a>
-            <a href="https://github.com/nduboi/Multichat" target="_blank" rel="noopener noreferrer" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4">
+            <a href="https://github.com/nduboi/Multichat" target="_blank" rel="noopener noreferrer" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4 dark:bg-gray-800 dark:shadow-gray-700">
                 <div class="text-center">
-                    <p class="font-bold">Multichat</p>
-                    <p>Multichat est une application web permettant d'echanger en direct.</p>
+                    <p class="font-bold dark:text-gray-200">Multichat</p>
+                    <p class="dark:text-gray-200">Multichat est une application web permettant d'echanger en direct.</p>
                 </div>
             </a>
-            <a href="foods/" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4">
-                <div class=" text-center">
-                    <p class="font-bold">Foods Clicker</p>
-                    <p>Un jeu de clic simple et amusant sur le thème de la nourriture.</p>
+            <a href="foods/" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4 dark:bg-gray-800 dark:shadow-gray-700">
+                <div class="text-center">
+                    <p class="font-bold dark:text-gray-200">Foods Clicker</p>
+                    <p class="dark:text-gray-200">Un jeu de clic simple et amusant sur le thème de la nourriture.</p>
                 </div>
             </a>
-            <a href="calculatrice/" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4">
-                <div class=" text-center">
-                    <p class="font-bold">Calculatrice</p>
-                    <p>Une calculatrice en ligne pratique pour tous vos besoins.</p>
+            <a href="calculatrice/" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4 dark:bg-gray-800 dark:shadow-gray-700">
+                <div class="text-center">
+                    <p class="font-bold dark:text-gray-200">Calculatrice</p>
+                    <p class="dark:text-gray-200">Une calculatrice en ligne pratique pour tous vos besoins.</p>
                 </div>
             </a>
-            <a href="departements/" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4">
-                <div class=" text-center">
-                    <p class="font-bold">Départements</p>
-                    <p>Informations sur les départements français.</p>
+            <a href="departements/" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4 dark:bg-gray-800 dark:shadow-gray-700">
+                <div class="text-center">
+                    <p class="font-bold dark:text-gray-200">Départements</p>
+                    <p class="dark:text-gray-200">Informations sur les départements français.</p>
                 </div>
             </a>
-            <a href="https://github.com/nduboi" target="_blank" rel="noopener noreferrer" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4">
-                <div class=" text-center">
-                    <p class="font-bold">Github</p>
-                    <p>Voir plus de projets sur mon profil Github.</p>
+            <a href="https://github.com/nduboi" target="_blank" rel="noopener noreferrer" class="hover:shadow-2xl m-2 overflow-hidden shadow-md rounded-lg bg-white h-full flex justify-center items-center w-full p-4 dark:bg-gray-800 dark:shadow-gray-700">
+                <div class="text-center">
+                    <p class="font-bold dark:text-gray-200">Github</p>
+                    <p class="dark:text-gray-200">Voir plus de projets sur mon profil Github.</p>
                 </div>
             </a>
         </section>
     </main>
-    <footer class="h-[5vh] w-full flex justify-center items-center bg-gray-300 p-4">
-        <p class="text-center">Nduboi 2024</p>
+    <footer class="h-[5vh] w-full flex justify-center items-center bg-gray-300 p-4 dark:bg-gray-800">
+        <p class="text-center dark:text-gray-200">Nduboi 2024</p>
     </footer>
+    <script src="build/js/main.js"></script>
+
 </body>
 </html>

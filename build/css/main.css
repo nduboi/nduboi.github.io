@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.image_move {
+    animation: image_movement 1.5s forwards ease-out;
+}
+@keyframes image_movement {
+    0% {
+        transform: translateX(-70%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+.name_opacity {
+    animation: name_opa 3s forwards ease-out;
+}
+@keyframes name_opa {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.montserrat-med500 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+.text_move {
+    animation: text_movement 3s forwards ease-out;
+}
+@keyframes text_movement {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
